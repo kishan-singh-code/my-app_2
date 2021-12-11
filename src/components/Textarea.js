@@ -92,7 +92,7 @@ export default function Textarea(props) {
         <p>
           <span style={{ fontSize: 25 }}>
             {
-              text.split(" ").filter((element) => {
+              text.split(/\s+/).filter((element) => {
                 return element.length !== 0;
               }).length
             }
